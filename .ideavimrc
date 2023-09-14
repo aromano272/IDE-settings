@@ -1,0 +1,11 @@
+:set relativenumber
+:set number
+
+:set clipboard+=unnamed
+inoremap jk <ESC>
+let mapleader = "'"
+
+:set ignorecase smartcase
+:set ideamarks
+
+:set showmode

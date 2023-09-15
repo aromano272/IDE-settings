@@ -1,0 +1,20 @@
+
+qa: start recording a macro named “a”
+q: stop recording
+@a: play back the macro
+
+ctrl+ws split hor
+ctrl+wv split vert
+ctrl+ww switch windows
+:sp file open file split
+:vs file open file vert split
+
+ctrl+o old/previous location
+ctrl+i next location
+
+:m +1 - moves down 1 line
+:m -2 - move up 1 lines
+
+[( [{ [<	Previous ( or { or <
+
+ma mark cursor as a

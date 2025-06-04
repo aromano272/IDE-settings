@@ -36,7 +36,12 @@ set number
 
 set clipboard+=unnamed
 inoremap jk <ESC>
-let mapleader = "'"
+let mapleader = " "
+
+set matchpairs+=<:>
+
+nmap J <Action>(EditorJoinLines)
+vmap J <Action>(EditorJoinLines) <ESC>
 
 " nnoremap d "_d
 " nnoremap D "_D
@@ -48,7 +53,24 @@ nnoremap <C-d> <C-d>zz
 nnoremap n nzz
 nnoremap N Nzz
 
+map gi <Action>(GotoImplementation)
+map gf <Action>(SelectInProjectView)
+map gh <Action>(ShowErrorDescription)
+nmap s <Plug>(easymotion-s)
+
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+
+" Apparently VIM undo/redo behaves quite differently then what Intellij undo/redo
+map u <Action>($Undo)
+map <C-r> <Action>($Redo)
+
+map <Leader> <Plug>(easymotion-prefix)
+
 set ignorecase smartcase
 set ideamarks
+set highlightedyank
 
 set showmode
+set quickscope
+set easymotion

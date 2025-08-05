@@ -41,7 +41,7 @@ let mapleader = " "
 set matchpairs+=<:>
 
 nmap J <Action>(EditorJoinLines)
-vmap J <Action>(EditorJoinLines) <ESC>
+vmap J <Action>(EditorJoinLines)
 
 " nnoremap d "_d
 " nnoremap D "_D

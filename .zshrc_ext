@@ -1,0 +1,7 @@
+install powerlevel10k and run config
+
+plugins=(git direnv zsh-autosuggestions zsh-syntax-highlighting)
+
+typeset -g POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
+typeset -g POWERLEVEL9K_DIR_SHOW_FULL_PATH=false
